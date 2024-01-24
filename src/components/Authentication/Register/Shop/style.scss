@@ -1,0 +1,46 @@
+@import "../../../variables.scss";
+@import "../../../css-config/mixin.scss";
+
+.shop-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sidebar {
+        border: 1px solid black;
+        width: 30%;
+    }
+
+    .shop-now-wrapper {
+        width: 70%;
+        padding: 2rem;
+
+        .shop-now-banner {
+            background-image: url('../../../assets/images/banner-33.jpg');
+            padding: 1.5rem;
+            border-radius: 10px;
+
+            h3 {
+                font-size: 1.9rem;
+                width: 40%;
+            }
+
+            p {
+                color: $gray-color;
+            }
+
+            button {
+                padding: .5rem 1rem;
+                border: 1px solid $gray-color;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                background: #fff;
+                
+            }
+        }
+    }
+}
