@@ -5,10 +5,10 @@ const carousel = () => {
   return (
     
     <Carousel className='carousel'>
-      <Carousel.Item interval={1500}>
+      <Carousel.Item interval={3500}>
         <img src='/Images/banner1.png' alt='...'/>
       </Carousel.Item>
-      <Carousel.Item interval={1500}>
+      <Carousel.Item interval={3500}>
       <img src='/Images/banner2.png' alt='...'/>
       </Carousel.Item>
     </Carousel>

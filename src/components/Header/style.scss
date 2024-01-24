@@ -27,8 +27,11 @@
     gap: 14px;
   }
 }
-
+.link{
+  text-decoration: none;
+}
 .middleRow {
+  
   .title {
     color: $purple-color;
     font-size: 25px;
@@ -63,6 +66,9 @@
     }
   }
   .right{
+    .link{
+      color: black;
+    }
     margin-top: 1%;
     gap: 27px;
     .icon{

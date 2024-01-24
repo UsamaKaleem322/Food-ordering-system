@@ -2,7 +2,10 @@ import React from 'react'
 import Carousel from './Carousel/carousel'
 import { Container } from 'react-bootstrap'
 import HomeCategories from './Categories/HomeCategories'
-import Products from './Products/Products'
+import Products from './Products/NewProducts'
+import CategoryBanners from './Category Banners/CategoryBanners'
+import NewArrivals from './Products/NewArrivals'
+import CategoryBanners2 from './Category Banners2/CategoryBanners2'
 
 const home = () => {
   
@@ -11,6 +14,9 @@ const home = () => {
       <Carousel/>
       <HomeCategories/>
       <Products/>
+      <CategoryBanners/>
+      <NewArrivals/>
+      <CategoryBanners2/>
     </Container>
   )
 }

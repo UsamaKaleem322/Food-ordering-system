@@ -13,52 +13,220 @@
   }
 }
 
-.categories{
+.categories {
   display: flex;
   justify-content: space-around;
   text-align: center;
   flex-wrap: wrap;
   cursor: pointer;
   gap: 5px;
-  .card{
-    img{
-      width:140px;
+
+  .card {
+    img {
+      width: 140px;
     }
-    p{
+
+    p {
       font-weight: 600;
       font-size: 14px;
     }
   }
 }
 
+.categoryBottomBanner {
+  background-color: #fff0dd;
+  border-radius: 10px;
+  border: 1px solid #fae8d0;
 
+  .first {
+    padding: 1%;
+  }
 
-.categoryBottomBanner{
-  background-image: url("../../../public/Images/banner3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  p {
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: larger;
+    margin-bottom: -1px;
+    color: $orange-color;
+  }
+
+  .bannnerImage {
+    background-image: url("../../../public/Images/banner3.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 30% 20%;
+  }
+
   // background-color: aqua;
 }
-.products{
+
+.products {
   display: flex;
   justify-content: space-around;
   row-gap: 20px;
+
   flex-wrap: wrap;
   align-items: stretch;
+  margin-left: 2%;
+  .review{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    img{
+      width: 80px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .content{
+      margin-top: 10px;
+      padding-left: 20px;
+      h4{
+        padding-top: 5px;
+        margin: 0%;
+      }
+      p{
+        margin: 0%;
+      }
+      .stars{
+        color: orange;
+      }
+    }
+    .text{
+      border-bottom: 1px solid lightgray;
+    }
+    .first{
+      background-image: url('../../../public/Images/categories/banners/banner-15.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 100% 0%;
+      padding: 3%;
+      padding-top: 20px;
+      p{
+        color: $orange-color;
+        font-weight: 600;
+        margin-bottom: 0%;
+      }
+      h4{
+        font-weight: bold;
+        font-size: 18px;
+      }
+      span{
+        color: gray;
+      }
+    }
+    
+  }
 }
 
 
 
+.categoryBanners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 
+  button {
+    margin-top: 15px;
+    padding: .5rem 1rem;
+    border: 1px solid $gray-color;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #fff;
+  }
 
+  p{
+    color: $orange-color;
+    font-weight: 600;
+    margin-bottom: 0%;
+  }
+  h4{
+    font-weight: bold;
+  }
+  span{
+    color: gray;
+  }
 
+  .first {
+    width: 450px;
+    background-image: url('../../../public/Images/categories/banners/banner-12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    padding: 2%;
+    border-radius: 15px;
+  }
+  .second{
+    width: 450px;
+    background-image: url('../../../public/Images/categories/banners/banner-13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    padding: 2%;
+    border-radius: 15px;
+  }
+  .third{
+    width: 450px;
+    background-image: url('../../../public/Images/categories/banners/banner-14.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    padding: 2%;
+    border-radius: 15px;
+  }
 
+}
+.categoryBanners2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 
+  button {
+    margin-top: 15px;
+    padding: .5rem 1rem;
+    border: 1px solid $gray-color;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #fff;
+  }
 
+  p{
+    color: $orange-color;
+    font-weight: 600;
+    margin-bottom: 0%;
+  }
+  h4{
+    font-size: 28px;
+    font-weight: bold;
+  }
+  span{
+    color: gray;
+  }
 
+  .first {
+    width: 670px;
+    background-image: url('../../../public/Images/categories/banners/banner-08.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    padding: 3%;
+    border-radius: 15px;
+  }
+  .second{
+    width: 670px;
+    background-image: url('../../../public/Images/categories/banners/banner-09.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    padding: 3%;
+    border-radius: 15px;
+  }
+  
 
-
-
-
-
-
+}
