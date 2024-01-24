@@ -1,9 +1,28 @@
-import React from 'react'
+import React from "react";
 
-const shop = () => {
+// Components
+import ShopNow from "./ShopNow/ShopNow";
+import Sidebar from "./Sidebar/Sidebar";
+
+// Style
+import "./style.scss";
+
+const Shop = () => {
   return (
-    <div>shop</div>
-  )
-}
+    <>
+      <h3 className="shop-now-heading">
+        Home <span>&gt;Shop</span>
+      </h3>
+      <div className="shop-wrapper">
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+        <div className="shop-now-wrapper">
+          <ShopNow />
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default shop
+export default Shop;

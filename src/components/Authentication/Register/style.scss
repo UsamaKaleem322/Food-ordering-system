@@ -1,0 +1,172 @@
+@import "../../../variable.scss";
+@import "../../../css-config/mixin.scss";
+
+.signup-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    background: #F7F7F7;
+
+    @include md {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .signup-image {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include md {
+        display: none;
+    }
+
+    img {
+        @include md {
+            display: none;
+        }
+    }
+   }
+
+   .form-wrapper {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    @include md {
+        margin: auto;
+        width: 100%;
+        background-image: none;
+    }
+
+    .privacy-text {
+        color: $gray-color;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .headline {
+        color: #7c7b7b;
+    }
+
+    .headline span {
+        color: $purple-color;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        margin-top: 1rem;
+        padding: 3rem;
+        width: 80%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        background: #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        @include md {
+            margin: 1rem auto;
+            width: 80%;
+            padding: 3rem 2rem;
+        }
+
+        @include sm {
+            width: 90%;
+            padding: 3rem 1rem;
+        }
+
+        .input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid $gray-color;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+
+        }
+
+        .input:focus {
+            outline-color: $purple-color;
+        }
+
+        .remember-password {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+            color: $gray-color;
+            font-size: 0.8rem;
+
+            @include sm {
+                font-size: 0.7rem;
+            }
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 0.7rem;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            background-color: $purple-color;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        .login-button:hover {
+            background: rgb(136, 26, 227);
+            
+        }
+
+        .login-with {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .line {
+               border-top: 1px solid #ccc;
+               width: 100%;
+               margin-bottom: 10px;
+            }
+
+            p {
+                width: 100%;
+                text-align: center;
+                color: $gray-color;
+            }
+
+        }
+
+        .links a {
+            font-size: 0.8rem;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: $link-color;
+
+            @include sm {
+                font-size: 0.7rem;
+            }
+        }
+
+       
+        
+    }
+   }
+}
