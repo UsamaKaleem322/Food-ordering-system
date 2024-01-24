@@ -1,5 +1,6 @@
 [
   {
+    "id":1,
     "name":"Yellow Potatoes Whole Fresh, 5lb Bag",
     "price":0.50,
     "sale":75,
@@ -9,6 +10,7 @@
     "stock":true
   },
   {
+    "id":2,
     "name":"Large Bagged Oranges",
     "price":0.89,
     "sale":50,
@@ -18,6 +20,7 @@
     "stock":true
   },
   {
+    "id":3,
     "name":"Angel Soft Toilet Paper, 9 Mega Rolls",
     "price":14.12,
     "sale":18,
@@ -27,6 +30,7 @@
     "stock":true
   },
   {
+    "id":4,
     "name":"Baby Magic Gentle Baby Lotion, Original Baby Scent, Hypoallergenic, 30 oz",
     "price":10.56,
     "sale":9,
@@ -36,6 +40,7 @@
     "stock":true
   },
   {
+    "id":5,
     "name":"100 Percent Apple Juice – 64 fl oz Bottle",
     "price":0.50,
     "sale":75,
@@ -45,6 +50,7 @@
     "stock":true
   },
   {
+    "id":6,
     "name":"Real Plant-Powered Protein Shake – Double Chocolate – 4pk_44 fl oz",
     "price":14.89,
     "sale":17,
@@ -54,6 +60,7 @@
     "stock":true
   },
   {
+    "id":7,
     "name":"USDA Choice Angus Beef T-Bone Steak – 0.70-1.50 lbs – price per lb",
     "price":12.89,
     "sale":14,
@@ -63,6 +70,7 @@
     "stock":true
   },
   {
+    "id":8,
     "name":"All Natural Antibiotic Free Chicken Drumsticks – 1.49-2.938 lbs – price per lb",
     "price":3.99,
     "sale":34,
@@ -72,6 +80,7 @@
     "stock":true
   },
   {
+    "id":9,
     "name":"Lay’s Classic Potato Snack Chips, Party Size, 13 oz Bag",
     "price":1.00,
     "sale":50,
@@ -81,6 +90,7 @@
     "stock":true
   },
   {
+    "id":10,
     "name":"Blueberry Breakfast Biscuits – 5 Packs",
     "price":2.78,
     "sale":30,
@@ -90,6 +100,7 @@
     "stock":true
   },
   {
+    "id":11,
     "name":"California Pizza Kitchen Margherita, Crispy Thin Crust Pizza, 15.5 oz (Frozen)",
     "price":11.77,
     "sale":35,
@@ -99,6 +110,7 @@
     "stock":true
   },
   {
+    "id":12,
     "name":"Petit Fours Vanilla, Double Chocolate, Red Velvet Assortment – 12.25oz_16ct",
     "price":1.99,
     "sale":34,
@@ -108,6 +120,7 @@
     "stock":true
   },
   {
+    "id":13,
     "name":"Cantaloupe Melon Fresh Organic Cut",
     "price":1.25,
     "sale":11,
@@ -117,6 +130,7 @@
     "stock":true
   },
   {
+    "id":14,
     "name":"Vital Farms Pasture-Raised Grade A Large Eggs – 12ct",
     "price":3.99,
     "sale":21,
@@ -126,6 +140,7 @@
     "stock":true
   },
   {
+    "id":15,
     "name":"Simple Kitchen FD Sliced Strawberries – 1.08lb",
     "price":21.90,
     "sale":13,
@@ -135,6 +150,7 @@
     "stock":true
   },
   {
+    "id":16,
     "name":"Oscar Mayer Ham & Swiss Melt Scrambler – 3oz",
     "price":11.90,
     "sale":31,
@@ -144,6 +160,7 @@
     "stock":true
   },
   {
+    "id":17,
     "name":"Persil ProClean Liquid Laundry Detergent, High Efficiency (HE), Plus OXI Power, 100 Ounce, 50 Total Loads",
     "price":19.90,
     "sale":11,
@@ -153,6 +170,7 @@
     "stock":true
   },
   {
+    "id":18,
     "name":"Zout Laundry Stain Remover, Foam Action, Triple Enzyme, 22 oz",
     "price":11.90,
     "sale":31,
@@ -161,7 +179,5 @@
     "category":"Grocery & Staples",
     "stock":true
   }
-
-
 
 ]
