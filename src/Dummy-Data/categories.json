@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Fruits & Vegetables",
+    "image": "/Images/categories/fruits-vegetables.png"
+  },
+  {
+    "name": "Baby & Preganancy",
+    "image": "/Images/categories/baby-care.png"
+  },
+  {
+    "name": "Beverages",
+    "image": "/Images/categories/beverages.png"
+  },
+  {
+    "name": "Meats & Seafood",
+    "image": "/Images/categories/meat-fish.png"
+  },
+  {
+    "name": "Biscuits & Snacks",
+    "image": "/Images/categories/organic.png"
+  },
+  {
+    "name": "Breads & Bakery",
+    "image": "/Images/categories/bakery.png"
+  },
+  {
+    "name": "Breakfast & Dairy",
+    "image": "/Images/categories/dairy.png"
+  },
+  {
+    "name": "Frozen Foods",
+    "image": "/Images/categories/frozen-foods.png"
+  },
+  {
+    "name": "Grocery & Staples",
+    "image": "/Images/categories/grocery.png"
+  }
+]

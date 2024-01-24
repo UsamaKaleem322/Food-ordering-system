@@ -1,0 +1,94 @@
+@import '../../variable.scss';
+
+.topRow {
+  background-color: $purple-color;
+  font-size: 15px;
+  color: $white-color;
+  padding-top: 1%;
+
+  .left-column {
+    display: flex;
+    gap: 14px;
+
+    .text {
+      border-left: 1px solid $gray-color;
+      padding-left: 1%;
+
+      span {
+        color: $orange-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .right-column {
+    display: flex;
+    justify-content: end;
+    gap: 14px;
+  }
+}
+
+.middleRow {
+  .title {
+    color: $purple-color;
+    font-size: 25px;
+    font-weight: bold;
+
+    span {
+      color: $orange-color;
+    }
+  }
+  .location{
+    font-size: 17px;
+    .icon{
+      font-size:22px;
+      padding:3px;
+       background-color:$purple-color;
+       color:white;
+       border-radius: 50%;
+    }
+  }
+  form {
+    padding: 0%;
+    width: 550px;
+    button {
+      background-color: $purple-color;
+      color: $white-color;
+      padding-bottom: 2%;
+      .icon {
+        font-size: large;
+        padding: 0%;
+        background-color: rgba(255, 255, 255, 0);
+      }
+    }
+  }
+  .right{
+    margin-top: 1%;
+    gap: 27px;
+    .icon{
+      color: $purple-color;
+      font-size: 29px;
+      padding: 0%;
+    }
+    p{
+      font-size: small;
+    }
+  }
+}
+
+.thirdRow{
+  border: 1px solid lightgray;
+  .nav{
+      gap: 20px;
+
+    .link{
+      text-decoration: none;
+      color: rgb(78, 78, 78);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .topRow {
+    display: none;
+  }
+}

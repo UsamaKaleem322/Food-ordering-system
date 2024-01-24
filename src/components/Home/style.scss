@@ -1,0 +1,32 @@
+@import '../../variable.scss';
+
+.carousel {
+  img {
+    border-radius: 40px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    color: black;
+  }
+}
+
+.categories{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  gap: 5px;
+  .card{
+    img{
+      width:140px;
+    }
+    p{
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+}
