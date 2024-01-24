@@ -1,0 +1,102 @@
+@import '../../variable.scss';
+
+.categoryBar{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  flex-wrap: wrap;
+  .firstCol{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    p{
+      padding-top: 4px;
+    }
+  }
+  button{
+    background-color: $purple-color;
+    color: aliceblue;
+    .icon{
+      margin-bottom: 4px;
+    }
+  }
+}
+
+
+
+
+// product
+.product{
+  cursor: pointer;
+  height:max-content;
+  width: 14rem;
+  
+  .link{
+    text-decoration: none;
+    color: black;
+  }
+  .img{
+    width: 100%;
+    height: 200px;
+  };
+  button{
+    color: aliceblue;
+  };
+  .button {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    background-color: $purple-color;
+    display: none;
+    overflow: hidden;
+    border-radius: 10px 20px 20px 10px;
+    color: aliceblue;
+  }
+  p{
+    margin-top: 8px;
+    margin-bottom: 5px;
+  };
+  .title{
+    font-size: 18px;
+  }
+  .focus {
+    color: rgb(190, 190, 190);
+    position: absolute;
+    right: 2%;
+    top: 15%;
+    font-size: 20px;
+    display: none;
+}
+
+.heart {
+    color: $orange-color;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    font-size: 20px;
+    display: block;
+}  
+.icons{
+  .stars{
+    color: $light-orange;
+  }
+}
+}
+.product :hover {
+  transition: 0.3s;
+  transform: scale(1.02);
+  .cart {
+    background-color: $purple-color;
+    padding: 7px;
+    border-radius: 100%;
+    color: aliceblue;
+    font-size: 32px;
+  }
+  .button{
+    display: block;
+  }
+  .focus {
+    display: block;
+  }
+  
+}

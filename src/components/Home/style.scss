@@ -30,3 +30,35 @@
     }
   }
 }
+
+
+
+.categoryBottomBanner{
+  background-image: url("../../../public/Images/banner3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-color: aqua;
+}
+.products{
+  display: flex;
+  justify-content: space-around;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
