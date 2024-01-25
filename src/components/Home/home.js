@@ -6,6 +6,9 @@ import Products from './Products/NewProducts'
 import CategoryBanners from './Category Banners/CategoryBanners'
 import NewArrivals from './Products/NewArrivals'
 import CategoryBanners2 from './Category Banners2/CategoryBanners2'
+import FeaturedProducts from './Products/FeaturedProducts'
+import CategoryBanners3 from './Category Banner 3/CategoryBanners3'
+import Deals from './Deals Of The Day/Deals'
 
 const home = () => {
   
@@ -17,6 +20,9 @@ const home = () => {
       <CategoryBanners/>
       <NewArrivals/>
       <CategoryBanners2/>
+      <FeaturedProducts/>
+      <CategoryBanners3/>
+      <Deals />
     </Container>
   )
 }

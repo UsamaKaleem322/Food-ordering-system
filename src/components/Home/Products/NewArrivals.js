@@ -4,12 +4,11 @@ import Product from '../../Common/Product'
 import products from '../../../Dummy-Data/products.json'
 import { LiaStarSolid } from 'react-icons/lia'
 import { RiStarSLine } from 'react-icons/ri'
-import { Col, Row } from 'react-bootstrap'
 const NewArrivals = () => {
   return (
     <>
     <DescriptionBar title={"New Arrivals"} desc={"Do not miss the current offers until the end of month."} path={"shop"}/>
-    <div className='products my-3'>
+    <div className='products my-3 mx-0'>
       <div className='row review' style={{width:'320px'}}>
         <div  className='col-4'>
           <img src='/Images/person.png'/>

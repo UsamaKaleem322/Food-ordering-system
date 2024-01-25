@@ -18,9 +18,10 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoCart } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 const header = () => {
+  
   return (
     <Container fluid>
-      <Row className="topRow px-md-5">
+      <Row className="topRow px-md-5" >
         <Col xs={6} className="left-column">
           <p>About us</p>
           <p>My Account</p>

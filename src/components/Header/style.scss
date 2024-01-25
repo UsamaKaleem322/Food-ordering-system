@@ -1,11 +1,11 @@
 @import '../../variable.scss';
-
+@import '../../css-config/mixin.scss';
 .topRow {
   background-color: $purple-color;
   font-size: 15px;
   color: $white-color;
   padding-top: 1%;
-
+  
   .left-column {
     display: flex;
     gap: 14px;
@@ -91,10 +91,5 @@
       text-decoration: none;
       color: rgb(78, 78, 78);
     }
-  }
-}
-@media (max-width: 768px) {
-  .topRow {
-    display: none;
   }
 }
