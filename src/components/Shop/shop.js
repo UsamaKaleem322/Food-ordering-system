@@ -6,7 +6,6 @@ import Sidebar from "./Sidebar/Sidebar";
 
 // Style
 import "./style.scss";
-import Footer from "../common/Footer/Footer";
 
 const Shop = () => {
   return (
@@ -22,7 +21,6 @@ const Shop = () => {
           <ShopNow />
         </div>
       </div>
-      <Footer />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import products from "../../../Dummy-Data/products.json";
-import Product from "../../common/Product";
+import Product from "../../Common/Product";
 
 // React Icons
 import { CiHeart } from "react-icons/ci";

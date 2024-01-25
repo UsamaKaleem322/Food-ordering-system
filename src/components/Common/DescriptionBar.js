@@ -8,10 +8,10 @@ const DescriptionBar = ({title,desc,path}) => {
     <div className='categoryBar mx-2'>
     <div className='firstCol'>
       <h4>{title}</h4>
-      <p>{desc}</p>
+      <p>{!!desc}</p>
     </div>
     <div >
-      <button className='btn btn-outline-light' onClick={() => navigate(`/${path}`)}>View All <FaArrowRightLong className='icon' /></button>
+      <button className='btn btn-outline-light' onClick={() => navigate(`/${path&&path}`)}>View All <FaArrowRightLong className='icon' /></button>
     </div>
   </div>
   )

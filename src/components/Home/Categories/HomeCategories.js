@@ -11,7 +11,7 @@ const HomeCategories = () => {
       <DescriptionBar
         title={"Top Categories"}
         desc={"New products with updated stocks."}
-        path={"categories"}
+        path={""}
       />
       <div className="categories my-3">
         {categories.map((item) => {
