@@ -18,9 +18,10 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoCart } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 const header = () => {
+  
   return (
     <Container fluid>
-      <Row className="topRow px-md-5">
+      <Row className="topRow px-md-5" >
         <Col xs={6} className="left-column">
           <p>About us</p>
           <p>My Account</p>
@@ -42,10 +43,11 @@ const header = () => {
           className="bg-body-tertiary px-md-5"
         >
           <Container fluid>
-            <Navbar.Brand className="title">
-              {" "}
+            <div className="title" >
+              <Link to={'/'} className="link">
               <span>Grocery</span> Store
-            </Navbar.Brand>
+              </Link>
+            </div>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -66,7 +68,7 @@ const header = () => {
                 </form>
               </Nav>
               <Nav className="ms-auto right">
-                <NavLink to="/login" className=" text-center ">
+                <NavLink to="/login" className=" text-center link">
                   <RiAccountPinCircleFill className="icon" />
                   <br />
                   <p>Account</p>
@@ -121,7 +123,7 @@ const header = () => {
                 <Link to={"/cart"} className="link">
                   Cart
                 </Link>
-                <Link to={"/accounts"} className="link">
+                <Link to={"/login"} className="link">
                   Accounts
                 </Link>
               </Nav>

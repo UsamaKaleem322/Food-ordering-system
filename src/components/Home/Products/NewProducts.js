@@ -11,7 +11,7 @@ const Products = () => {
         desc={"Some of the new products arriving this  weeks"}
         path={"shop"}
       />
-      <div className="products my-3">
+      <div className="products my-3 mx-0">
         {products.map((product) => <Product product={product} />).slice(0, 6)}
       </div>
     </>

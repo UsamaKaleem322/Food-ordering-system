@@ -5,7 +5,7 @@ import './style.scss'
 const DescriptionBar = ({title,desc,path}) => {
   const navigate=useNavigate()
   return (
-    <div className='categoryBar'>
+    <div className='categoryBar mx-2'>
     <div className='firstCol'>
       <h4>{title}</h4>
       <p>{desc}</p>
