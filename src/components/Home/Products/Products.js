@@ -1,18 +1,21 @@
-import React from 'react'
-import Product from '../../Common/Product'
-import products from '../../../Dummy-Data/products.json'
-import DescriptionBar from '../../Common/DescriptionBar'
-import '../style.scss'
+import React from "react";
+import Product from "../../common/Product";
+import products from "../../../Dummy-Data/products.json";
+import DescriptionBar from "../../common/DescriptionBar";
+import "../style.scss";
 const Products = () => {
   return (
     <>
-    <DescriptionBar title={"New Products"} desc={"Some of the new products arriving this  weeks"} path={"shop"}/>
-      <div className='products my-3'>
-        {products.map(product=><Product product={product}/>).slice(0,6)}
+      <DescriptionBar
+        title={"New Products"}
+        desc={"Some of the new products arriving this  weeks"}
+        path={"shop"}
+      />
+      <div className="products my-3">
+        {products.map((product) => <Product product={product} />).slice(0, 6)}
       </div>
     </>
+  );
+};
 
-  )
-}
-
-export default Products
+export default Products;

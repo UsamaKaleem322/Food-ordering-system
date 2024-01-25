@@ -1,17 +1,38 @@
 import React, { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import products from "../../../Dummy-Data/products.json";
+import Product from "../../common/Product";
 
 // React Icons
 import { CiHeart } from "react-icons/ci";
 import { IoStarSharp } from "react-icons/io5";
 import { CiShoppingCart } from "react-icons/ci";
 
+// React Bootstrap
+import Pagination from "react-bootstrap/Pagination";
+
 // styles
 import "../style.scss";
 
 const ShopNow = () => {
   const [productsData, setProductsData] = useState(products);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 12;
+
+  // Pagination
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  // Pagination
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = productsData.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+
   return (
     <>
       <section className="shop-now-banner w-100 h-auto">
@@ -27,6 +48,27 @@ const ShopNow = () => {
           ShopNow <FaLongArrowAltRight />
         </button>
       </section>
+      <section className="shop-now-products">
+        {currentProducts.map((product) => (
+          <Product product={product} />
+        ))}
+      </section>
+      <div className="mt-4">
+        {/* Pagination */}
+        <Pagination>
+          {Array.from({
+            length: Math.ceil(productsData.length / productsPerPage),
+          }).map((_, index) => (
+            <Pagination.Item
+              key={index + 1}
+              active={index + 1 === currentPage}
+              onClick={() => paginate(index + 1)}
+            >
+              {index + 1}
+            </Pagination.Item>
+          ))}
+        </Pagination>
+      </div>
     </>
   );
 };

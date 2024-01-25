@@ -17,26 +17,210 @@
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
+
+    // Side Bar
     .sidebar {
         width: 30%;
         border: 1px solid #fff;
-        padding: 2rem;
+        padding: 2rem 2rem 2rem 3.5rem;
+
+        @include md {
+            display: none;
+        }
+
+        // Wigit filters section.
+        .wigit-filters {
+            width: 100%;
+            margin-bottom: 2rem;
+
+            .wigit-price-text {
+                font-weight: bold;
+                color: #333;
+                font-size: 1.2rem;
+
+            }
+
+            .inputs-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+
+                input {
+                    width: 100%;
+                    padding: .5rem 1rem;
+                    border-radius: 10px;
+                    border: 1px solid gray;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    color: $gray-color;
+                }
+
+                input:focus {
+                    outline-color: $purple-color;
+                }
+        
+            }
+
+            .range-input {
+                appearance: none; 
+                width: 100%;
+                height: 5px; 
+                background: #333; 
+                border-radius: 5px;  
+                outline: none; 
+                margin-top: 1rem;
+            }
+
+            .price-filter {
+                margin-top: 1rem;
+                .price-text {
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .product-categories {
+            width: 100%;
+            margin-bottom: 2rem;
+
+            .wigit-price-text {
+                font-weight: bold;
+                color: #333;
+                font-size: 1.2rem;
+
+            }
+
+            .category {
+                width: 100%;
+                .category-name {
+                    font-size: 1.1rem;
+                    margin-left: 10px;
+                }
+
+                .category-input {
+                    transform: scale(1.5);
+                    border: 1px solid $gray-color;
+                }
+            }
+        }
+
+        .colors {
+            width: 100%;
+            margin-bottom: 2rem;
+
+            .wigit-price-text {
+                font-weight: bold;
+                font-size: 1.2rem;
+                color: #333;
+            }
+
+
+            .colorItem {
+                .color {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .brands {
+            width: 100%;
+            margin-bottom: 2rem;
+
+            .wigit-price-text {
+                font-weight: bold;
+                color: #333;
+                font-size: 1.2rem;
+
+            }
+
+
+            .brands-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    .brand-name {
+                        font-size: 1rem;
+                        color: #333;
+                    }
+
+                    input {
+                        transform: scale(1.5);
+                        border: 1px solid $gray-color;
+                    }
+                }
+
+                p {
+                    color: $gray-color;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .stocks {
+
+            .wigit-price-text {
+                font-weight: bold;
+                color: #333;
+                font-size: 1.2rem;
+            }
+
+            .stocks-row {
+                .stocks-input {
+                    transform: scale(1.5);
+                    border: 1px solid $gray-color;
+                }
+
+                .stock-text {
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+        }
     }
 
+
+    // shop now
     .shop-now-wrapper {
         width: 70%;
         padding: 2rem;
+
+        @include md {
+            width: 100%;
+            margin: auto;
+        }
 
         .shop-now-banner {
             background-image: url('../../../public/Images/banner-33.jpg');
             padding: 1.5rem;
             border-radius: 10px;
 
+            @include md {
+                background-image: url('../../../public/Images/banner-33.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
             h3 {
                 font-size: 1.9rem;
                 width: 40%;
+
+                @include md {
+                    width: 100%;
+                }
             }
 
             p {
@@ -55,14 +239,21 @@
             }
         }
 
-        .products {
-            margin-top: 1rem;
+        .shop-now-products{
+            margin-top: 2rem;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            gap: 10px;
             align-items: stretch;
-            width: 100%;
             flex-wrap: wrap;
-            padding: 0;       
-        }
+
+            @include md {
+                flex-wrap: nowrap;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+          }
     }
 }

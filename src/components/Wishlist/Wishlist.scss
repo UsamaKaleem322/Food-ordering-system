@@ -1,0 +1,32 @@
+
+@import "../../variable.scss";
+
+.btn-color {
+    background-color: $red-color;
+    color: white;
+    border: none;
+    padding: 5px 2rem;
+    
+}
+
+.btn-color:hover {
+    background-color: $red-color;
+}
+
+.add-to-cart {
+    margin-top: 1rem;
+    background-color: $purple-color;
+    color: white;
+    border: none;
+    padding: 5px 2rem;
+}
+
+
+.add-to-cart:hover {
+    background-color: $purple-color;
+}
+
+.product-desc {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
