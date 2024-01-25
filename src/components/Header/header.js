@@ -71,7 +71,10 @@ const header = () => {
                   <br />
                   <p>Account</p>
                 </NavLink>
-                <div className="position-relative text-center">
+                <NavLink
+                  to="/wishlist"
+                  className="position-relative text-center"
+                >
                   <FaRegHeart className="icon" />
                   <MDBBadge
                     color="danger"
@@ -82,7 +85,7 @@ const header = () => {
                     0
                   </MDBBadge>
                   <p>Whishlist</p>
-                </div>
+                </NavLink>
                 <div className="position-relative text-center">
                   <IoCart className="icon" />
                   <MDBBadge
