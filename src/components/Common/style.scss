@@ -28,7 +28,7 @@
 // product
 .product{
   cursor: pointer;
-  height:max-content;
+  height:420;
   width: 14rem;
   
   .link{
@@ -99,4 +99,10 @@
     display: block;
   }
   
+}
+
+@media(max-width:1024px) {
+  .product{
+    width: 18rem;
+  }
 }

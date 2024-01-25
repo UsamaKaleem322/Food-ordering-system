@@ -8,8 +8,8 @@ import "./style.scss";
 import loginImg from "../../../images/login.bg.jpg";
 
 // Components
-import GoogleButton from "../../common/GoogleButton/GoogleButton";
-import FacebooxButton from "../../common/FacebookButton/FacebooxButton";
+import GoogleButton from "../../Common/GoogleButton/GoogleButton";
+import FacebooxButton from "../../Common/FacebookButton/FacebooxButton";
 
 // React Icons
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";

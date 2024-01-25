@@ -1,11 +1,11 @@
 @import '../../variable.scss';
-
+@import '../../css-config/mixin.scss';
 .topRow {
   background-color: $purple-color;
   font-size: 15px;
   color: $white-color;
   padding-top: 1%;
-
+  
   .left-column {
     display: flex;
     gap: 14px;
@@ -27,8 +27,11 @@
     gap: 14px;
   }
 }
-
+.link{
+  text-decoration: none;
+}
 .middleRow {
+  
   .title {
     color: $purple-color;
     font-size: 25px;
@@ -63,6 +66,9 @@
     }
   }
   .right{
+    .link{
+      color: black;
+    }
     margin-top: 1%;
     gap: 27px;
     .icon{
@@ -85,10 +91,5 @@
       text-decoration: none;
       color: rgb(78, 78, 78);
     }
-  }
-}
-@media (max-width: 768px) {
-  .topRow {
-    display: none;
   }
 }

@@ -3,6 +3,7 @@ import categories from '../../../Dummy-Data/categories.json'
 import '../style.scss'
 import { useNavigate } from 'react-router-dom';
 import DescriptionBar from '../../Common/DescriptionBar';
+import { Col, Row } from 'react-bootstrap';
 const HomeCategories = () => {
   const navigate = useNavigate()
   return (
@@ -18,10 +19,13 @@ const HomeCategories = () => {
           )
         })}
       </div>
-      <div className='categoryBottomBanner'>
+      <Row className='categoryBottomBanner mx-2 mt-4'>
+        <Col md={7} className='first'>
         <p>In store or online your health & safety is our top priority</p>
         <span>The only supermarket that makes your life easier, makes you enjoy life and makes it better</span>
-      </div>
+        </Col>
+        <Col md={5} className="bannnerImage"><br></br></Col>
+      </Row>
     </>
   )
 }
