@@ -1,11 +1,10 @@
 import React from "react";
-import DescriptionBar from "../../common/DescriptionBar";
-import Product from "../../common/Product";
 import products from "../../../Dummy-Data/products.json";
-import { LiaStarSolid } from "react-icons/lia";
-import { RiStarSLine } from "react-icons/ri";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import DescriptionBar from "../../common/DescriptionBar";
+import Product from "../../common/Product";
+
 const FeaturedProducts = () => {
   const navigate = useNavigate();
   return (
