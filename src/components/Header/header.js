@@ -18,10 +18,9 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoCart } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 const header = () => {
-  
   return (
     <Container fluid>
-      <Row className="topRow px-md-5" >
+      <Row className="topRow px-md-5">
         <Col xs={6} className="left-column">
           <p>About us</p>
           <p>My Account</p>
@@ -43,9 +42,9 @@ const header = () => {
           className="bg-body-tertiary px-md-5"
         >
           <Container fluid>
-            <div className="title" >
-              <Link to={'/'} className="link">
-              <span>Grocery</span> Store
+            <div className="title">
+              <Link to={"/"} className="link">
+                <span>Grocery</span> Store
               </Link>
             </div>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -88,7 +87,10 @@ const header = () => {
                   </MDBBadge>
                   <p>Whishlist</p>
                 </NavLink>
-                <div className="position-relative text-center">
+                <NavLink
+                  to="/cart"
+                  className="link position-relative text-center"
+                >
                   <IoCart className="icon" />
                   <MDBBadge
                     color="danger"
@@ -99,7 +101,7 @@ const header = () => {
                     0
                   </MDBBadge>
                   <p>Cart</p>
-                </div>
+                </NavLink>
               </Nav>
             </Navbar.Collapse>
           </Container>

@@ -2,7 +2,7 @@ import React from "react";
 import categories from "../../../Dummy-Data/categories.json";
 import "../style.scss";
 import { useNavigate } from "react-router-dom";
-import DescriptionBar from "../../Common/DescriptionBar";
+import DescriptionBar from "../../common/DescriptionBar";
 import { Col, Row } from "react-bootstrap";
 const HomeCategories = () => {
   const navigate = useNavigate();

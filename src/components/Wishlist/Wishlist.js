@@ -84,16 +84,8 @@ function Wishlist() {
                       </div>
                       <h6 className="text-success">Free shipping</h6>
                       <div className="d-flex flex-column mt-4">
-                        <MDBBtn size="sm" className="btn-color">
-                          Delete
-                        </MDBBtn>
-                        <MDBBtn
-                          color="primary"
-                          size="sm"
-                          className="add-to-cart"
-                        >
-                          Add to cart
-                        </MDBBtn>
+                        <button className="btn-color">Delete</button>
+                        <button className="add-to-cart">Add to cart</button>
                       </div>
                     </MDBCol>
                   </MDBRow>
