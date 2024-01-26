@@ -74,7 +74,7 @@ const header = () => {
                 </NavLink>
                 <NavLink
                   to="/wishlist"
-                  className="position-relative text-center"
+                  className="position-relative text-center link"
                 >
                   <FaRegHeart className="icon" />
                   <MDBBadge
@@ -87,21 +87,20 @@ const header = () => {
                   </MDBBadge>
                   <p>Whishlist</p>
                 </NavLink>
-                <NavLink
-                  to="/cart"
-                  className="link position-relative text-center"
-                >
-                  <IoCart className="icon" />
-                  <MDBBadge
-                    color="danger"
-                    dark
-                    pill
-                    className="position-absolute translate-middle"
-                  >
-                    0
-                  </MDBBadge>
-                  <p>Cart</p>
-                </NavLink>
+                <Link to={"/cart"} className="link">
+                  <div className="position-relative text-center">
+                    <IoCart className="icon" />
+                    <MDBBadge
+                      color="danger"
+                      dark
+                      pill
+                      className="position-absolute translate-middle"
+                    >
+                      0
+                    </MDBBadge>
+                    <p>Cart</p>
+                  </div>
+                </Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -119,9 +118,9 @@ const header = () => {
                 <Link to={"/shop"} className="link">
                   Shop
                 </Link>
-                <Link to={"/categories"} className="link">
+                {/* <Link to={"/categories"} className="link">
                   Categories
-                </Link>
+                </Link> */}
                 <Link to={"/cart"} className="link">
                   Cart
                 </Link>

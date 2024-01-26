@@ -1,7 +1,7 @@
 import React from "react";
-import Product from "../../common/Product";
+import Product from "../../Common/Product";
 import products from "../../../Dummy-Data/products.json";
-import DescriptionBar from "../../common/DescriptionBar";
+import DescriptionBar from "../../Common/DescriptionBar";
 import "../style.scss";
 const Products = () => {
   return (
