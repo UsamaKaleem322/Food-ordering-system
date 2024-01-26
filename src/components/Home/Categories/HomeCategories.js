@@ -2,7 +2,7 @@ import React from "react";
 import categories from "../../../Dummy-Data/categories.json";
 import "../style.scss";
 import { useNavigate } from "react-router-dom";
-import DescriptionBar from "../../Common/DescriptionBar";
+import DescriptionBar from "../../common/DescriptionBar";
 import { Col, Row } from "react-bootstrap";
 const HomeCategories = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const HomeCategories = () => {
       <DescriptionBar
         title={"Top Categories"}
         desc={"New products with updated stocks."}
-        path={"categories"}
+        path={""}
       />
       <div className="categories my-3">
         {categories.map((item) => {

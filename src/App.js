@@ -13,6 +13,7 @@ import Login from "./components/Authentication/Login/Login";
 import Register from "./components/Authentication/Register/Register";
 import Wishlist from "./components/Wishlist/Wishlist";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
+import Footer from "./components/common/Footer/Footer";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/wishlist" element={<Wishlist />} />
         <Route exact path="/:id" element={<SingleProduct />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

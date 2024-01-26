@@ -18,10 +18,9 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoCart } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 const header = () => {
-  
   return (
     <Container fluid>
-      <Row className="topRow px-md-5" >
+      <Row className="topRow px-md-5">
         <Col xs={6} className="left-column">
           <p>About us</p>
           <p>My Account</p>
@@ -43,9 +42,9 @@ const header = () => {
           className="bg-body-tertiary px-md-5"
         >
           <Container fluid>
-            <div className="title" >
-              <Link to={'/'} className="link">
-              <span>Grocery</span> Store
+            <div className="title">
+              <Link to={"/"} className="link">
+                <span>Grocery</span> Store
               </Link>
             </div>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -75,7 +74,7 @@ const header = () => {
                 </NavLink>
                 <NavLink
                   to="/wishlist"
-                  className="position-relative text-center"
+                  className="position-relative text-center link"
                 >
                   <FaRegHeart className="icon" />
                   <MDBBadge
@@ -88,18 +87,20 @@ const header = () => {
                   </MDBBadge>
                   <p>Whishlist</p>
                 </NavLink>
-                <div className="position-relative text-center">
-                  <IoCart className="icon" />
-                  <MDBBadge
-                    color="danger"
-                    dark
-                    pill
-                    className="position-absolute translate-middle"
-                  >
-                    0
-                  </MDBBadge>
-                  <p>Cart</p>
-                </div>
+                <Link to={"/cart"} className="link">
+                  <div className="position-relative text-center">
+                    <IoCart className="icon" />
+                    <MDBBadge
+                      color="danger"
+                      dark
+                      pill
+                      className="position-absolute translate-middle"
+                    >
+                      0
+                    </MDBBadge>
+                    <p>Cart</p>
+                  </div>
+                </Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -117,9 +118,9 @@ const header = () => {
                 <Link to={"/shop"} className="link">
                   Shop
                 </Link>
-                <Link to={"/categories"} className="link">
+                {/* <Link to={"/categories"} className="link">
                   Categories
-                </Link>
+                </Link> */}
                 <Link to={"/cart"} className="link">
                   Cart
                 </Link>

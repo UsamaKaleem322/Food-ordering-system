@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import products from "../../../Dummy-Data/products.json";
-import Product from "../../common/Product";
 
 // React Icons
-import { CiHeart } from "react-icons/ci";
-import { IoStarSharp } from "react-icons/io5";
-import { CiShoppingCart } from "react-icons/ci";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
+// Components
+import Product from "../../common/Product";
 
 // React Bootstrap
 import Pagination from "react-bootstrap/Pagination";
