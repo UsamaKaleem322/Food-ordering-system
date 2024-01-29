@@ -1,10 +1,15 @@
 @import '../../variable.scss';
 @import '../../css-config/mixin.scss';
-.topRow {
+
+div.topRow {
   background-color: $purple-color;
   font-size: 15px;
   color: $white-color;
   padding-top: 1%;
+
+  @include lg{
+    display:none;
+  }
   
   .left-column {
     display: flex;
@@ -30,8 +35,10 @@
 .link{
   text-decoration: none;
 }
-.middleRow {
-  
+div.middleRow {
+  @include lg{
+    display:none;
+  }
   .title {
     color: $purple-color;
     font-size: 25px;
@@ -82,14 +89,57 @@
   }
 }
 
-.thirdRow{
+div.thirdRow{
+  @include lg{
+    display:none;
+  }
   border: 1px solid lightgray;
   .nav{
       gap: 20px;
-
     .link{
       text-decoration: none;
       color: rgb(78, 78, 78);
+    }
+  }
+}
+
+div.mobileHeader{
+  display: none;
+  @include lg{
+    display: block;   
+  }
+  border: 1px solid lightgray;
+  .title {
+    color: $purple-color;
+    font-size: 25px;
+    font-weight: bold;
+    span {
+      color: $orange-color;
+    }
+  }
+  .nav{
+      gap: 20px;
+    .link{
+      text-decoration: none;
+      color: rgb(78, 78, 78);
+    }
+  }
+  .right{
+    @include md{
+      padding: 3% 1%;
+    }
+    .link{
+      color: black;
+    }
+    margin-top: 1%;
+    gap: 27px;
+    .icon{
+      color: $purple-color;
+      font-size: 29px;
+      padding: 0%;
+    }
+    p{
+      font-size: small;
     }
   }
 }

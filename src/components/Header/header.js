@@ -19,23 +19,23 @@ import { IoCart } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 const header = () => {
   return (
-    <Container fluid>
-      <Row className="topRow px-md-5">
-        <Col xs={6} className="left-column">
+    <Container fluid className="mainHeader">
+      <div className="row topRow px-md-5">
+        <div  className="col-md-6 left-column">
           <p>About us</p>
           <p>My Account</p>
           <p>Whishlist</p>
           <p className="text">
             We deliver to you every day from <span>7:00 to 23:00</span>
           </p>
-        </Col>
-        <Col xs={6} className="right-column">
+        </div>
+        <div  className="col-md-6 right-column">
           <p>English</p>
           <p>USD</p>
           <p>Order Tracking</p>
-        </Col>
-      </Row>
-      <Row className="middleRow">
+        </div>
+      </div>
+      <div className="row middleRow">
         <Navbar
           collapseOnSelect
           expand="lg"
@@ -44,7 +44,7 @@ const header = () => {
           <Container fluid>
             <div className="title">
               <Link to={"/"} className="link">
-                <span>Grocery</span> Store
+                <span>Grocers</span> Store
               </Link>
             </div>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -105,8 +105,8 @@ const header = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </Row>
-      <Row className="thirdRow ">
+      </div>
+      <div className="row thirdRow ">
         <Navbar expand="lg" className="bg-body-tertiary px-md-2">
           <Container fluid className="px-md-5">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -143,7 +143,80 @@ const header = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </Row>
+      </div>
+      <div className="row mobileHeader">
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          className="bg-body-tertiary px-md-5"
+        >
+          <Container fluid>
+            <div className="title">
+              <Link to={"/"} className="link">
+                <span>Grocers</span> Store
+              </Link>
+            </div>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              
+              
+            <Nav className="ms-md-auto nav">
+                <Link to={"/"} className="link">
+                  Home
+                </Link>
+                <Link to={"/shop"} className="link">
+                  Shop
+                </Link>
+                {/* <Link to={"/categories"} className="link">
+                  Categories
+                </Link> */}
+                <Link to={"/cart"} className="link">
+                  Cart
+                </Link>
+                <Link to={"/login"} className="link">
+                  Accounts
+                </Link>
+              </Nav>
+              <div className="ms-auto d-flex right">
+                <NavLink to="/login" className=" text-center link">
+                  <RiAccountPinCircleFill className="icon" />
+                  <br />
+                  <p>Account</p>
+                </NavLink>
+                <NavLink
+                  to="/wishlist"
+                  className="position-relative text-center link"
+                >
+                  <FaRegHeart className="icon" />
+                  <MDBBadge
+                    color="danger"
+                    dark
+                    pill
+                    className="position-absolute translate-middle"
+                  >
+                    0
+                  </MDBBadge>
+                  <p>Whishlist</p>
+                </NavLink>
+                <Link to={"/cart"} className="link">
+                  <div className="position-relative text-center">
+                    <IoCart className="icon" />
+                    <MDBBadge
+                      color="danger"
+                      dark
+                      pill
+                      className="position-absolute translate-middle"
+                    >
+                      0
+                    </MDBBadge>
+                    <p>Cart</p>
+                  </div>
+                </Link>
+              </div>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
     </Container>
   );
 };
