@@ -13,7 +13,6 @@ import Login from "./components/Authentication/Login/Login";
 import Register from "./components/Authentication/Register/Register";
 import Wishlist from "./components/Wishlist/Wishlist";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
-import Footer from "./components/common/Footer/Footer";
 import { useEffect, useState } from "react";
 
 function App() {
