@@ -1,26 +1,17 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
 // Components
 import Home from "./components/Home/home";
 import Shop from "./components/Shop/shop";
 import Cart from "./components/Cart/cart";
 import Categories from "./components/Categories/categories";
 import Checkout from "./components/Checkout/checkout";
-
 import Accounts from "./components/Accounts/accounts";
 import Login from "./components/Authentication/Login/Login";
 import Register from "./components/Authentication/Register/Register";
 import Wishlist from "./components/Wishlist/Wishlist";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
-import { useEffect, useState } from "react";
-
 function App() {
-  const [showHeader, setShowHeader] = useState(true);
-
-  useEffect(() => {
-    setShowHeader(window.location.pathname=="/login"?false:true)
-  }, [showHeader]);
   return (
     <Router>
       <Routes>
