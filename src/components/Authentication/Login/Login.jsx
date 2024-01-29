@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 // styles
 import "./style.scss";
@@ -16,6 +16,11 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate=useNavigate()
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    navigate('/')
+  }
   return (
     <div className="login-wrapper d-flex justify-center align-center ">
       <figure className="login-image">
@@ -26,7 +31,7 @@ const Login = () => {
         <p className="headline">
           More than <span>15000 recipes</span> from around the world
         </p>
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="email"
             placeholder="Enter your email address"

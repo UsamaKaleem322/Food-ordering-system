@@ -7,7 +7,7 @@ import Shop from "./components/Shop/shop";
 import Cart from "./components/Cart/cart";
 import Categories from "./components/Categories/categories";
 import Checkout from "./components/Checkout/checkout";
-import Header from "./components/Header/header";
+
 import Accounts from "./components/Accounts/accounts";
 import Login from "./components/Authentication/Login/Login";
 import Register from "./components/Authentication/Register/Register";
@@ -24,7 +24,6 @@ function App() {
   }, [showHeader]);
   return (
     <Router>
-      {showHeader && <Header />}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/shop" element={<Shop />} />
@@ -37,7 +36,6 @@ function App() {
         <Route exact path="/wishlist" element={<Wishlist />} />
         <Route exact path="/:id" element={<SingleProduct />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }
