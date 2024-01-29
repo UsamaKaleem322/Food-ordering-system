@@ -3,13 +3,15 @@ import React from "react";
 // Components
 import ShopNow from "./ShopNow/ShopNow";
 import Sidebar from "./Sidebar/Sidebar";
-
+import Header from '../Header/header'
 // Style
 import "./style.scss";
+import Footer from "../common/Footer/Footer";
 
 const Shop = () => {
   return (
     <>
+    <Header/>
       <h3 className="shop-now-heading">
         Home <span>&gt;Shop</span>
       </h3>
@@ -21,6 +23,7 @@ const Shop = () => {
           <ShopNow />
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

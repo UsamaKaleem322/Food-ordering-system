@@ -13,6 +13,8 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 
+import Footer from "../common/Footer/Footer";
+import Header from '../Header/header';
 // style
 import "./Wishlist.scss";
 
@@ -22,6 +24,8 @@ import products from "../../Dummy-Data/products.json";
 function Wishlist() {
   const [productsData, setProductsData] = useState(products);
   return (
+    <>
+    <Header/>
     <MDBContainer fluid>
       {productsData
         .map((product) => (
@@ -96,6 +100,8 @@ function Wishlist() {
         ))
         .splice(0, 6)}
     </MDBContainer>
+    <Footer/>
+    </>
   );
 }
 

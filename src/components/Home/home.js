@@ -9,9 +9,12 @@ import CategoryBanners2 from "./Category Banners2/CategoryBanners2";
 import FeaturedProducts from "./Products/FeaturedProducts";
 import CategoryBanners3 from "./Category Banner 3/CategoryBanners3";
 import Deals from "./Deals Of The Day/Deals";
-
+import Header from '../Header/header';
+import Footer from "../common/Footer/Footer";
 const home = () => {
   return (
+    <>
+    <Header/>
     <Container fluid className="px-md-5 py-4">
       <Carousel />
       <HomeCategories />
@@ -23,6 +26,8 @@ const home = () => {
       <CategoryBanners3 />
       <Deals />
     </Container>
+    <Footer/>
+    </>
   );
 };
 
