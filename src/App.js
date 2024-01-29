@@ -14,11 +14,17 @@ import Register from "./components/Authentication/Register/Register";
 import Wishlist from "./components/Wishlist/Wishlist";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
 import Footer from "./components/common/Footer/Footer";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [showHeader, setShowHeader] = useState(true);
+
+  useEffect(() => {
+    setShowHeader(window.location.pathname=="/login"?false:true)
+  }, [showHeader]);
   return (
     <Router>
-      <Header />
+      {showHeader && <Header />}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/shop" element={<Shop />} />
